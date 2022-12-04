@@ -1,0 +1,13 @@
+PUBLIC,,,,,,,,,ADMIN,,,,,,,,,RESIDENT,,,
+,,,,,,,,,,,,,,,,,,,,,
+Public_ID,Name,PhoneNumber,Email,,,,,,ID_Admin(PK),Password,Name,PhoneNumber,Email,,,,,Resident_ID,Name,PhoneNumber,Email
+2C5781A4,Gareth Berg,+60-17 1147 6601,est.ac@google.ca,,,,,,AECBC8DA,6233,,,,,,,,A235FFC8,Maxine Morris,60 14-7658 8547,libero@gmail.com
+66ED4C8B,Olivia Russell,+60-13 7846 4867,donec.dignissim@hotmail.net,,,,,,4CEA1136,1539,,,,,,,,BD0D081B,Declan Conrad,60 14-2468 5852,velit.cras@gmail..com
+BFA82DBC,Lara Ellis,+60-13 2442 6210,mauris@icloud.edu,,,,,,9EA43739,5534,,,,,,,,9862A5A2,Brianna Jennings,60 16-6733 4475,felis.donec@gmail.com
+ED553095,Garth Mosley,+60-11 2065 5540,praesent@aol.org,,,,,,DD605CC6,2433,,,,,,,,2598D73C,Sasha Stein,60 16-6255 7578,dui.fusce@gmail.com
+64734B75,Charity Johnson,+60-12 6428 3867,mi.enim.condimentum@google.net,,,,,,DD2C6412,6546,,,,,,,,098E5FA2,Devin Hooper,60 18-3684 1822,ligula.elit@gmail.com
+67FAE063,Acton Fox,+60-11 3755 8922,nunc.sed@google.org,,,,,,6993941F,1668,,,,,,,,FDA7AE04,Cadman Burks,60 14-1584 5782,neque.pellentesque@gmail.com
+9D9C9123,Lawrence Wiley,+60-13 9882 7341,eu.eros.nam@hotmail.org,,,,,,32298329,2506,,,,,,,,891C8A71,Keelie Valdez,60 12-7473 7478,dui.cras@gmail.com
+9D9C9123,Idola Tillman,+60-12 9887 6148,euismod.mauris@aol.com,,,,,,7F717266,1144,,,,,,,,,,,vestibulum.nec@gmail.com
+55A66685,Boris Hatfield,+60-15 9112 5409,posuere.at@protonmail.couk,,,,,,6EC9D65C,7911,,,,,,,,,,,
+A235FFC8,Germaine Watson,+60-13 5862 1547,luctus.felis@hotmail.net,,,,,,061B5B9A,2829,,,,,,,,,,,
