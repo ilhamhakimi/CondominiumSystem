@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+  .title{
+    font-family: "Montserrat" , sans-serif;
+    font-size: 10px;
+    margin-top:75px;
+    margin-left: 200px;
+  }
+
+  .search{
+    margin-top:20px;
+    margin-left: 200px;
+    width: 190px;
+    height: 25px;
+    border-radius: 10px;
+  }
+
+  .Filter{
+    opacity: 0;
+  }
+
+  .buttreset{
+    width: 69px;
+    height: 30px;
+    margin-top:20px;
+  }
+
+  table{
+    font-family: "Montserrat" , sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid   #ddd;
+    margin-left: 200px;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  .buttcreate{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #fcc1f2;
+    margin-top:-50px;
+    margin-left: 82%;
+  }
+
+  .buttcreate:hover{
+    background-color: #f7e2f3;
+  }
+
+  .buttprev{
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+    margin-top: 20px;
+    margin-left: 80%;
+  }
+
+  .buttnext{
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+  }
+
+  .bttnupdate{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 200px;
+    background-color: blue; 
+    color: white; 
+    border-radius: 25px;
+  } 
+
+  .bttnupdate:hover {
+    background-color: rgb(140, 140, 255);
+    color: black;
+  }
+
+
+  .bttndelete{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 63, 63); 
+    color: white; 
+    border-radius: 25px;
+  }
+
+  .bttndelete:hover {
+    background-color: rgb(255, 134, 134);
+    color: black;
+  }
+
+
+
+  
