@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Display Page</title>
+    <style>
+      /* Add some basic styling to the table */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+      }
+      
+      th, td {
+        padding: 10px;
+        text-align: left;
+      }
+      
+      /* Hide the edit form initially */
+      #edit-form {
+        display: none;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h1>Table Display Page</h1>
+    
+    <!-- Add a table with the necessary columns -->
+    <table>
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" name="select"></td>
+          <td>John Doe</td>
+          <td>johndoe@example.com</td>
+          <td>555-1234</td>
+          <td>
+            <button onclick="editRow(this)">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="select"></td>
+          <td>Jane Smith</td>
+          <td>janesmith@example.com</td>
+          <td>555-5678</td>
+          <td>
+            <button onclick="editRow(this)">Edit</button>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+    
+    <!-- Add a batch delete button and an edit form -->
+    <div>
+      <button onclick="deleteSelected()">Delete Selected</button>
+    </div>
+    <div id="edit-form">
+      <h2>Edit Row</h2>
+      <form onsubmit="saveChanges(); return false;">
+        <label>Name:</label>
+        <input type="text" id="edit-name">
+        <br>
+        <label>Email:</label>
+        <input type="text" id="edit-email">
+        <br>
+        <label>Phone:</label>
+        <input type="text" id="edit-phone">
+        <br>
+        <button type="submit">Save Changes</button>
+        <button onclick="cancelEdit()">Cancel</button>
+      </form>
+    </div>
+    
+    <!-- Add some JavaScript to handle the editing and deleting -->
+    <script>
+      function editRow(button) {
+  // Get the row that corresponds to the clicked button
+  var row = button.parentNode.parentNode;
+  
+  // Get the data for the row
+  var name = row.cells[1].textContent;
+  var email = row.cells[2].textContent;
+  var phone = row.cells[3].textContent;
+  
+  // Prompt the user for new data
+  var newName = prompt("Enter a new name:", name);
+  var newEmail = prompt("Enter a new email:", email);
+  var newPhone = prompt("Enter a new phone number:", phone);
+  
+  // Update the row's data
+  row.cells[1].textContent = newName;
+  row.cells[2].textContent = newEmail;
+  row.cells[3].textContent = newPhone;
+}
+      
+      function saveChanges() {
+        // Get the form data
+        var name = document.getElementById("edit-name").value;
+        var email = document.getElementById("edit-email").value;
+        var phone = document.getElementById("edit-phone").value;
+        
+        // Update the row's data
+        var row = document.querySelector("input[type='checkbox']:checked").parentNode.parentNode;
+        row.cells[1].textContent = name;
+        row.cells[2].textContent = email;
+        row.cells[3].textContent = phone;
+        
+        // Hide the edit form and show the batch delete button
+        document.getElementById("edit-form").style.display = "none";
+        document.getElementsByTagName("button")[0].style.display = "block";
+      }
+      
+      function cancelEdit() {
+        // Hide the edit form and show the batch delete button
+        document.getElementById("edit-form").style.display = "none";
+        document.getElementsByTagName("button")[0].style.display = "block";
+      }
+      
+      function deleteSelected() {
+        // Get all the checkboxes that are checked
+        var checkboxes = document.querySelectorAll("input[type='checkbox']:checked");
+        
+        // Delete the corresponding rows
+        for (var i = 0; i < checkboxes.length; i++) {
+          var row = checkboxes[i].parentNode.parentNode;
+          row.parentNode.removeChild(row);
+        }
+      }
+    </script>
+  </body>
+</html>
